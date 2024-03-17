@@ -1,4 +1,10 @@
 import "./App.css";
+import hero from "./assets/hero.jpg";
+import { TbMushroomFilled } from "react-icons/tb";
+
+function TimelineIcon() {
+  return <TbMushroomFilled className="text-secondary text-3xl" />;
+}
 
 function App() {
   return (
@@ -6,8 +12,7 @@ function App() {
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage:
-            "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+          backgroundImage: `url(${hero})`,
         }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
@@ -20,12 +25,14 @@ function App() {
               et a id nisi.
             </p>
             <button className="btn btn-primary">Get Started</button>
+            <button className="btn btn-accent">Get Started</button>
+            <button className="btn btn-secondary">Get Started</button>
+            <button className="btn btn-neutral">Get Started</button>
           </div>
         </div>
       </div>
 
-      <div className="max-w-screen-lg m-auto">
-        <div className="divider"></div>
+      <div className="container mx-auto p-4 text-base-content">
         <article className="prose mx-auto">
           <h1>Garlic bread with cheese: What the science tells us</h1>
           <p>
@@ -45,20 +52,9 @@ function App() {
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <TimelineIcon />
             </div>
-            <div className="timeline-start md:text-end mb-10">
+            <div className="timeline-start md:text-end mb-10 pt-1.5">
               <time className="font-mono italic">1984</time>
               <div className="text-lg font-black">First Macintosh computer</div>
               The Apple Macintosh—later rebranded as the Macintosh 128K—is the
@@ -68,25 +64,14 @@ function App() {
               floppy drive were housed in a beige case with integrated carrying
               handle; it came with a keyboard and single-button mouse.
             </div>
-            <hr />
+            <hr className="bg-secondary opacity-20" />
           </li>
           <li>
-            <hr />
+            <hr className="bg-secondary opacity-20" />
             <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <TimelineIcon />
             </div>
-            <div className="timeline-end mb-10">
+            <div className="timeline-end mb-10 pt-1.5">
               <time className="font-mono italic">1998</time>
               <div className="text-lg font-black">iMac</div>
               iMac is a family of all-in-one Mac desktop computers designed and
@@ -94,25 +79,14 @@ function App() {
               consumer desktop offerings since its debut in August 1998, and has
               evolved through seven distinct forms
             </div>
-            <hr />
+            <hr className="bg-secondary opacity-20" />
           </li>
           <li>
-            <hr />
+            <hr className="bg-secondary opacity-20" />
             <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <TimelineIcon />
             </div>
-            <div className="timeline-start md:text-end mb-10">
+            <div className="timeline-start md:text-end mb-10 pt-1.5">
               <time className="font-mono italic">2001</time>
               <div className="text-lg font-black">iPod</div>
               The iPod is a discontinued series of portable media players and
@@ -123,25 +97,14 @@ function App() {
               discontinued the iPod product line on May 10, 2022. At over 20
               years, the iPod brand is the oldest to be discontinued by Apple
             </div>
-            <hr />
+            <hr className="bg-secondary opacity-20" />
           </li>
           <li>
-            <hr />
+            <hr className="bg-secondary opacity-20" />
             <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <TimelineIcon />
             </div>
-            <div className="timeline-end mb-10">
+            <div className="timeline-end mb-10 pt-1.5">
               <time className="font-mono italic">2007</time>
               <div className="text-lg font-black">iPhone</div>
               iPhone is a line of smartphones produced by Apple Inc. that use
@@ -152,25 +115,14 @@ function App() {
               iPhones had been sold. As of 2022, the iPhone accounts for 15.6%
               of global smartphone market share
             </div>
-            <hr />
+            <hr className="bg-secondary opacity-20" />
           </li>
           <li>
-            <hr />
+            <hr className="bg-secondary opacity-20" />
             <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <TimelineIcon />
             </div>
-            <div className="timeline-start md:text-end mb-10">
+            <div className="timeline-start md:text-end mb-10 pt-1.5">
               <time className="font-mono italic">2015</time>
               <div className="text-lg font-black">Apple Watch</div>
               The Apple Watch is a line of smartwatches produced by Apple Inc.
