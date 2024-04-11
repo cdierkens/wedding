@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/ms-madi':
+    specifier: 5.0.12
+    version: 5.0.12
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -541,6 +544,10 @@ packages:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource/ms-madi@5.0.12:
+    resolution: {integrity: sha512-iQTia8SUDqjs7UD9zDxfZsWkUgaAUanpIqvwfrLaWYvCEB4k7gFh9u2qxMY94he8y0NyV5hBGWE6ks64Ff4jMw==}
+    dev: false
 
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
