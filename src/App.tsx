@@ -57,8 +57,8 @@ function App() {
             <H2>Accommodations</H2>
 
             <p className="text-sm !text-white">
-              Available Sunday, August 4th 3:00 PM through Sunday, August 4th
-              11:00 PM for family and friends.
+              Available Sunday, August 4th 3:00 PM through Friday, August 9th
+              11:00 AM for family and friends.
             </p>
 
             <ul className="text-sm marker:text-white font-normal">
