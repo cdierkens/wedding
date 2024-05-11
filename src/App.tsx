@@ -53,7 +53,7 @@ function App() {
 
       <div className="text-base-content mt-4 mb-24">
         <div className="bg-secondary text-gray-100 -mt-4 py-4 mb-4">
-          <article className="container prose !prose-invert mx-auto">
+          <article className="container px-4 prose !prose-invert mx-auto">
             <H2>Accommodations</H2>
 
             <p className="text-sm !text-white">
@@ -76,7 +76,7 @@ function App() {
           </article>
         </div>
 
-        <div className="container prose mx-auto">
+        <div className="container px-4 prose mx-auto">
           <H2>Timeline</H2>
           <ul className="not-prose timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
             <li>
@@ -169,10 +169,10 @@ function App() {
 
         <div className="divider"></div>
 
-        <div className="container prose mx-auto">
+        <div className="container px-4 prose mx-auto">
           <H2>Vendors</H2>
 
-          <div className="flex justify-evenly not-prose">
+          <div className="flex gap-4 flex-wrap justify-evenly not-prose">
             <div className="avatar">
               <div className="w-24 rounded-full">
                 <a href="https://apothecaflowershoppe.com/">
