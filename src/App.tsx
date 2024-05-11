@@ -22,6 +22,10 @@ function TimelineMiddle({
   return <div className={`timeline-middle px-1 ${className}`}>{children}</div>;
 }
 
+function H2({ children }: PropsWithChildren) {
+  return <h2 className="font-cursive text-6xl mb-5">{children}</h2>;
+}
+
 function App() {
   return (
     <>
@@ -47,176 +51,164 @@ function App() {
         </div>
       </div>
 
-      <div className="container mx-auto p-4 text-base-content">
-        <article className="prose mx-auto">
-          <h2>Accommodations</h2>
+      <div className="text-base-content mt-4 mb-24">
+        <div className="bg-secondary text-gray-100 -mt-4 py-4 mb-4">
+          <article className="container prose !prose-invert mx-auto">
+            <H2>Accommodations</H2>
 
-          <p>
-            Available Sunday, August 4th 3:00 PM through Sunday, August 4th
-            11:00 PM for family and friends.
-          </p>
+            <p className="text-sm !text-white">
+              Available Sunday, August 4th 3:00 PM through Sunday, August 4th
+              11:00 PM for family and friends.
+            </p>
 
-          <ul>
-            <li>
-              <a href="https://maps.app.goo.gl/jp49Hm4UV4KWhT3X9">
-                19 Clay Brook Rd, Gorham, NH 03581
-              </a>
-            </li>
-            <li>
-              <a href="https://www.vrbo.com/249051ha?dateless=true">
-                VRBO Listing
-              </a>
-            </li>
-          </ul>
-        </article>
-
-        <div className="divider"></div>
-
-        <div className="prose mx-auto">
-          <h2>Timeline</h2>
+            <ul className="text-sm marker:text-white font-normal">
+              <li>
+                <a href="https://maps.app.goo.gl/jp49Hm4UV4KWhT3X9">
+                  19 Clay Brook Rd, Gorham, NH 03581
+                </a>
+              </li>
+              <li>
+                <a href="https://www.vrbo.com/249051ha?dateless=true">
+                  VRBO Listing
+                </a>
+              </li>
+            </ul>
+          </article>
         </div>
 
-        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-          <li>
-            <TimelineLine />
-            <TimelineMiddle className="mt-3">
-              <TimelineIcon />
-            </TimelineMiddle>
+        <div className="container prose mx-auto">
+          <H2>Timeline</H2>
+          <ul className="not-prose timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+            <li>
+              <TimelineLine />
+              <TimelineMiddle className="mt-3">
+                <TimelineIcon />
+              </TimelineMiddle>
 
-            <div className="timeline-start md:text-end mt-2">
-              <h2 className="mt-0 text-3xl">Check-in</h2>
-              <p className="text-sm ml-2">Sunday, August 4th 3:00 PM</p>
-            </div>
+              <div className="timeline-start md:text-end mt-2">
+                <h2 className="mt-0 text-3xl">Check-in</h2>
+                <p className="text-sm ml-2">Sunday, August 4th 3:00 PM</p>
+              </div>
 
-            <TimelineLine />
-          </li>
+              <TimelineLine />
+            </li>
 
-          <li>
-            <TimelineLine />
+            <li>
+              <TimelineLine />
 
-            <TimelineMiddle className="mt-2">
-              <TimelineIcon />
-            </TimelineMiddle>
+              <TimelineMiddle className="mt-2">
+                <TimelineIcon />
+              </TimelineMiddle>
 
-            <div className="timeline-end mt-2">
-              <h2 className="mt-0 text-3xl">Free Time</h2>
-              <p className="text-sm">
-                Monday, August 5th - Tuesday, August 6th
-              </p>
-            </div>
+              <div className="timeline-end mt-2">
+                <h2 className="mt-0 text-3xl">Free Time</h2>
+                <p className="text-sm">
+                  Monday, August 5th - Tuesday, August 6th
+                </p>
+              </div>
 
-            <TimelineLine />
-          </li>
+              <TimelineLine />
+            </li>
 
-          <li>
-            <TimelineLine />
-            <TimelineMiddle className="mt-3">
-              <TimelineIcon />
-            </TimelineMiddle>
+            <li>
+              <TimelineLine />
+              <TimelineMiddle className="mt-3">
+                <TimelineIcon />
+              </TimelineMiddle>
 
-            <div className="timeline-start md:text-end mt-2">
-              <h2 className="mt-0 text-3xl">Wedding Day</h2>
-              <p className="text-sm ml-2">Tuesday, August 6th</p>
-            </div>
+              <div className="timeline-start md:text-end mt-2">
+                <h2 className="mt-0 text-3xl">Wedding Day</h2>
+                <p className="text-sm ml-2">Tuesday, August 6th</p>
+              </div>
 
-            <TimelineLine />
-          </li>
+              <TimelineLine />
+            </li>
 
-          <li>
-            <TimelineLine />
-            <div className="timeline-middle px-1">
-              <BsDot className="text-secondary scale-150" />
-            </div>
-            <div className="timeline-start md:text-end">
-              <p className="indent-2 text-sm">1:00 PM Ceremony</p>
-            </div>
-            <TimelineLine />
-          </li>
+            <li>
+              <TimelineLine />
+              <div className="timeline-middle px-1">
+                <BsDot className="text-secondary scale-150" />
+              </div>
+              <div className="timeline-start md:text-end">
+                <p className="indent-2 text-sm">1:00 PM Ceremony</p>
+              </div>
+              <TimelineLine />
+            </li>
 
-          <li>
-            <TimelineLine />
-            <div className="timeline-middle px-1">
-              <BsDot className="text-secondary scale-150" />
-            </div>
-            <div className="timeline-start md:text-end">
-              <p className="indent-2 text-sm">1:00 PM Ceremony</p>
-            </div>
-            <TimelineLine />
-          </li>
+            <li>
+              <TimelineLine />
 
-          <li>
-            <TimelineLine />
+              <TimelineMiddle className="mt-2">
+                <TimelineIcon />
+              </TimelineMiddle>
 
-            <TimelineMiddle className="mt-2">
-              <TimelineIcon />
-            </TimelineMiddle>
+              <div className="timeline-end mt-2">
+                <h2 className="mt-0 text-3xl">Intimate Hike</h2>
+                <span className="text-base">Sara and Chris</span>
+                <p className="text-sm">Wednesday, August 7th</p>
+              </div>
 
-            <div className="timeline-end mt-2">
-              <h2 className="mt-0 text-3xl">Intimate Hike (Sara and Chris)</h2>
-              <p className="text-sm">Wednesday, August 7th</p>
-            </div>
+              <TimelineLine />
+            </li>
 
-            <TimelineLine />
-          </li>
+            <li>
+              <TimelineLine />
+              <TimelineMiddle className="mt-3">
+                <TimelineIcon />
+              </TimelineMiddle>
 
-          <li>
-            <TimelineLine />
-            <div className="timeline-middle px-1">
-              <BsDot className="text-secondary scale-150" />
-            </div>
-            <div className="timeline-end !self-end !my-0">
-              <p className="indent-2 text-sm">1:00 PM Ceremony</p>
-            </div>
-            <TimelineLine />
-          </li>
+              <div className="timeline-start md:text-end mt-2">
+                <h2 className="mt-0 text-3xl">Check-out</h2>
+                <p className="text-sm ml-2">Friday, August 9th 11:00 PM</p>
+              </div>
 
-          <li>
-            <TimelineLine />
-            <div className="timeline-middle px-1">
-              <BsDot className="text-secondary scale-150" />
-            </div>
-            <div className="timeline-end">
-              <p className="indent-2 text-sm">1:00 PM Ceremony</p>
-            </div>
-            <TimelineLine />
-          </li>
-
-          <li>
-            <TimelineLine />
-            <TimelineMiddle className="mt-3">
-              <TimelineIcon />
-            </TimelineMiddle>
-
-            <div className="timeline-start md:text-end mt-2">
-              <h2 className="mt-0 text-3xl">Check-out</h2>
-              <p className="text-sm ml-2">Sunday, August 4th 11:00 PM</p>
-            </div>
-
-            <TimelineLine />
-          </li>
-        </ul>
+              <TimelineLine />
+            </li>
+          </ul>
+        </div>
 
         <div className="divider"></div>
 
-        <div className="prose mx-auto">
-          <h2>Vendors</h2>
+        <div className="container prose mx-auto">
+          <H2>Vendors</H2>
 
-          <ul>
-            <li>
-              <a href="https://www.buckandbloom.com/">Buck and Bloom</a>
-            </li>
-            <li>
-              <a href="https://www.autumnnomad.com/weddings-home">
-                Autumn Nomad
-              </a>
-            </li>
-            <li>
-              <a href="https://apothecaflowershoppe.com/">Apotheca Flowers</a>
-            </li>
-            <li>
-              <a href="https://babel-photos.com/">Babel Photos</a>
-            </li>
-          </ul>
+          <div className="flex justify-evenly not-prose">
+            <div className="avatar">
+              <div className="w-24 rounded-full">
+                <a href="https://apothecaflowershoppe.com/">
+                  <span className="sr-only">Apotheca Flowers</span>
+                  <img src="/apothica.jpeg" />
+                </a>
+              </div>
+            </div>
+            <div className="avatar">
+              <div className="w-24 rounded-full">
+                <a href="https://www.buckandbloom.com/">
+                  <span className="sr-only">Buck and Bloom</span>
+                  <img src="/buck-and-bloom.jpeg" />
+                </a>
+              </div>
+            </div>
+
+            <div className="avatar">
+              <div className="w-24 rounded-full">
+                <a href="https://www.autumnnomad.com/weddings-home">
+                  <span className="sr-only">Autumn Nomad</span>
+                  <img src="autumn-nomad.jpeg" />
+                </a>
+              </div>
+            </div>
+
+            <div className="avatar">
+              <div className="w-24 rounded-full">
+                <a href="https://babel-photos.com/">
+                  <span className="sr-only">Babel Photos</span>
+
+                  <img src="babel-photos.jpeg" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
