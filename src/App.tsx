@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       <div
-        className="hero min-h-screen"
+        className="hero min-h-svh"
         style={{
           background: `url(${greenFlowerBackgroundInverted}) left -10% / 500px no-repeat, url(${greenFlowerBackground}) right 110% / 500px no-repeat, url(${hero}) center / cover no-repeat`,
         }}
